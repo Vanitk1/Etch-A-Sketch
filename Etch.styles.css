@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  flex-direction: column;
+}
+
+button {
+  margin: 0;
+  background-color: #333;
+  border: 2px solid white;
+  cursor: pointer;
+	color: white;
+	font-size: 13px;
+	padding: 5px 20px;
+}
+
+button:hover {
+	background-color: #7892c2;
+  border-color: #4e6096;
+  color: black;
+}
+
+button:focus {
+  outline: none;
+}
+
+.grid {
+  border: 5px solid black;
+  margin:auto;
+  display: grid;
+  height: 575px;
+  width: 575px;
+}
+.activate {
+  display: inline-block;
+  margin-left: 4px;
+  width: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.colour {
+  border: 1px solid black;
+}
+
+.black {
+  background-color: black;
+}
+
+.green {
+  background-color: green;
+}
+
