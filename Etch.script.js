@@ -1,4 +1,4 @@
-const container = document.querySelector(".grid")
+const container = document.querySelector(".grid");
 const clearButton = document.querySelector('.clear');
 const rainbowButton = document.querySelector('.rainbow');
 const activate = document.querySelector('.activate');
@@ -8,7 +8,7 @@ function createGrid (gridSize = 16) {
   for (let i = 0; i < (gridSize * gridSize); i++) {
     let fill = document.createElement("div");
     fill.classList.add('colour');
-    fill.addEventListener('mouseover', () => colorGrid(fill));
+    fill.addEventListener('mouseover', () => fillGridBlocks(fill));
     container.style.setProperty('grid-template-columns', `repeat(${gridSize}, 2fr)`);
     container.style.setProperty('grid-template-rows', `repeat(${gridSize}, 2fr)`);
     container.appendChild(fill);
@@ -28,7 +28,7 @@ function clear(amount = 16) {
   createGrid(amount, amount)
 }
 
-function colorGrid(fill) {
+function fillGridBlocks(fill) {
   let colour1 = Math.floor(Math.random() * 256);
   let colour2 = Math.floor(Math.random() * 256);
   let colour3 = Math.floor(Math.random() * 256);
@@ -37,11 +37,12 @@ function colorGrid(fill) {
     fill.style.setProperty('background-color', `rgb(${colour1},${colour2},${colour3})`);
   } else {
     fill.classList.add('black');
+    fill.style.setProperty('background-color', 'black');
   }
 }
 
 function rainbow() {
-  activate.classList.toggle('green');
+  activate.classList.toggle('gold');
   active = !active;
   console.log(activate);
 }
