@@ -11,14 +11,15 @@ body {
 }
 
 button {
-  margin: 0;
+  margin: 10px;
   background-color: #333;
   border: 2px solid black;
   cursor: pointer;
 	color: white;
 	font-size: 13px;
 	padding: 5px 20px;
-	margin-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: auto;
 }
 
 button:hover {
@@ -35,12 +36,12 @@ button:focus {
   border: 5px solid black;
   margin:auto;
   display: grid;
-  height: 575px;
-  width: 575px;
+  height: 600px;
+  width: 600px;
 }
 .activate {
   display: inline-block;
-  margin-left: 4px;
+  margin-left: 10px;
   width: 5px;
   padding: 5px;
   border: 1px solid black;
@@ -58,3 +59,13 @@ button:focus {
   background-color: green;
 }
 
+.info {
+  color: white;
+  font-size: 25px;
+}
+
+h1 {
+  color: white;
+  text-decoration: underline;
+  font-size: 40px;
+}
